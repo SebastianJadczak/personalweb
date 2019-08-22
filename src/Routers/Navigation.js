@@ -22,11 +22,18 @@ class Navigation extends Component {
         this.setState(prevState => ({
             login: !prevState.login,
         }))
+        if (this.state.login) {
+            this.setState({
+                profil: false
+            })
+        }
+
     }
     handleProfil = () => {
         this.setState(prevState => ({
             profil: !prevState.profil
         }))
+        console.log(this.state.profil)
     }
 
     render() {
