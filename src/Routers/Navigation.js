@@ -6,6 +6,7 @@ import "../styles/Navigation.css"
 class Navigation extends Component {
     state = {
         clickMenu: false,
+        login: false,
     }
 
 
@@ -14,16 +15,24 @@ class Navigation extends Component {
             clickMenu: !prevState.clickMenu
         }))
     }
+
+    handleLogin = () => {
+        this.setState(prevState => ({
+            login: !prevState.login,
+        }))
+    }
+
     render() {
 
 
-        const { clickMenu } = this.state
+        const { clickMenu, login } = this.state
 
         return (
             <>
-                <button onClick={this.changeClickMenu}>Click</button>
-                {clickMenu ? <Nav clickMenu={this.changeClickMenu} /> : null};
-                <button onClick={this.changeClickMenu}>Click</button>
+                {login ? <button>Profil</button> : null}
+                <button className="buttonMenu" onClick={this.changeClickMenu}>Menu</button>
+                {clickMenu ? <Nav clickMenu={this.changeClickMenu} /> : null}
+                <button className="buttonLogin" onClick={this.handleLogin}>{login ? "Wyloguj" : "Zaloguj"}</button>
             </>
         )
     }

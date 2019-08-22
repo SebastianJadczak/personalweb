@@ -1,2 +1,17 @@
 It is documentation aplication "PersonalWeb".
 
+
+////////////////////////////////////////
+Module Navigation.js:
+///////////////////////////////////////
+
+function changeClickMenu:
+
+She changes state "clickMenu".
+If you click to the button You will open the menu.
+__________________________________________________________________
+
+function handleLogin:
+
+She changes state "login".
+If you click to the button You look profile user (your).
