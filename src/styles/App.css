@@ -52,7 +52,7 @@ nav.navigation div.nav {
   top: 7vh;
   right: 240px;
   background-color: rgb(0, 2, 95);
-  width: 200px;
+  width: 205px;
 }
 
 nav.navigation div.nav ul {
@@ -66,6 +66,34 @@ nav.navigation div.nav ul li {
 }
 
 nav.navigation div.nav ul li a {
+
+  color: rgb(223, 223, 223);
+  text-decoration: none;
+
+}
+
+/* Button Profil */
+
+nav.navigation div.profile {
+  position: absolute;
+  font-size: 17px;
+  top: 7vh;
+  right: 455px;
+  background-color: rgb(0, 2, 95);
+  width: 200px;
+}
+
+nav.navigation div.profile ul {
+  list-style: none;
+}
+
+nav.navigation div.profile ul li {
+  padding: 5px;
+  display: block;
+  text-align: center;
+}
+
+nav.navigation div.profile ul li a {
 
   color: rgb(223, 223, 223);
   text-decoration: none;

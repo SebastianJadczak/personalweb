@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './Nav'
+import Profil from './Profil'
 import "../styles/Navigation.css"
 
 
@@ -7,6 +8,7 @@ class Navigation extends Component {
     state = {
         clickMenu: false,
         login: false,
+        profil: false,
     }
 
 
@@ -21,17 +23,25 @@ class Navigation extends Component {
             login: !prevState.login,
         }))
     }
+    handleProfil = () => {
+        this.setState(prevState => ({
+            profil: !prevState.profil
+        }))
+    }
 
     render() {
 
 
-        const { clickMenu, login } = this.state
+        const { clickMenu, login, profil } = this.state
 
         return (
             <>
-                {login ? <button>Profil</button> : null}
+                {login ? <button onClick={this.handleProfil}>Profil</button> : null}
+                {profil ? <Profil /> : null}
+
                 <button className="buttonMenu" onClick={this.changeClickMenu}>Menu</button>
                 {clickMenu ? <Nav clickMenu={this.changeClickMenu} /> : null}
+
                 <button className="buttonLogin" onClick={this.handleLogin}>{login ? "Wyloguj" : "Zaloguj"}</button>
             </>
         )
