@@ -15,3 +15,10 @@ function handleLogin:
 
 She changes state "login".
 If you click to the button You look profile user (your).
+__________________________________________________________________
+
+function handleProfil:
+
+She changes state "profil".
+If you click to the button, You look menu user.
+__________________________________________________________________
