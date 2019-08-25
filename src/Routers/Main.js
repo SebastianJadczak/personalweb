@@ -8,6 +8,7 @@ import MyAccount from "../Pages/MyAccount";
 import Tasks from "../Pages/Tasks";
 import Promotion from "../Pages/Promotion";
 import ErrorPage from "../Pages/ErrorPage";
+import Table from "../Pages/Table"
 
 const Main = () => {
     return (
@@ -19,6 +20,7 @@ const Main = () => {
             <Route path="/myaccount" component={MyAccount} />;
             <Route path="/tasks" component={Tasks} />
             <Route path="/promotion" component={Promotion} />
+            <Route path="/table" component={Table} />
             <Route component={ErrorPage} />
         </Switch>
     )
