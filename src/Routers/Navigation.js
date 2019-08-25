@@ -9,15 +9,11 @@ class Navigation extends Component {
     state = {
         clickMenu: false,
         login: false,
-        profil: false,
+        profil: false
     }
 
 
-    changeClickMenu = () => {
-        this.setState(prevState => ({
-            clickMenu: !prevState.clickMenu
-        }))
-    }
+
 
     handleLogin = () => {
         this.setState(prevState => ({
@@ -30,9 +26,16 @@ class Navigation extends Component {
         }
 
     }
+    changeClickMenu = () => {
+        this.setState(prevState => ({
+            clickMenu: !prevState.clickMenu,
+            profil: false
+        }))
+    }
     handleProfil = () => {
         this.setState(prevState => ({
-            profil: !prevState.profil
+            profil: !prevState.profil,
+            clickMenu: false
         }))
         console.log(this.state.profil)
     }
@@ -46,7 +49,7 @@ class Navigation extends Component {
             <>
                 <div className="logo"></div>
                 {login ? <button onClick={this.handleProfil}>Profil</button> : null}
-                {profil ? <Profil /> : null}
+                {profil ? <Profil clickProfil={this.handleProfil} /> : null}
 
                 <button className="buttonMenu" onClick={this.changeClickMenu}>Menu</button>
                 {clickMenu ? <Nav clickMenu={this.changeClickMenu} /> : null}

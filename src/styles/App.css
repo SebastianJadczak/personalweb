@@ -6,7 +6,8 @@
 }
 
 main {
-  height: 200vh;
+  height: 130vh;
+  padding-top: 100px;
 }
 
 nav.navigation {

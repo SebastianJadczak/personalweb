@@ -4,13 +4,13 @@ import { NavLink } from 'react-router-dom';
 const list = [
     { id: 1, name: "Moje konto", path: "/myaccount" },
     { id: 2, name: "Zadania", path: "/tasks" },
-    { id: 3, name: "Promocja", path: "/contact" },
+    { id: 3, name: "Promocja", path: "/promotion" },
 ]
 
 const Profil = (props) => {
     const menu = list.map(item => (
         <li key={item.id} className={item.name}>
-            <NavLink to={item.path} onClick={props.clickMenu}> {item.name}</NavLink>
+            <NavLink to={item.path} onClick={props.clickProfil}> {item.name}</NavLink>
         </li>
     ))
     return (
