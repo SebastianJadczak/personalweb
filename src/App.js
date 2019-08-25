@@ -22,10 +22,11 @@ class App extends Component {
             <section className="main">
               <Main />
             </section>
-            <footer>
-              <Footer />
-            </footer>
           </main>
+          <footer>
+            <Footer />
+          </footer>
+
 
 
 

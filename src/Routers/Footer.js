@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <p>Stopka</p>
+        <p>Created by Sebastian Jadczak</p>
     )
 }
 export default Footer;

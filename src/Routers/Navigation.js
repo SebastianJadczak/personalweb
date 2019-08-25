@@ -4,6 +4,7 @@ import Profil from './Profil'
 import "../styles/Navigation.css"
 
 
+
 class Navigation extends Component {
     state = {
         clickMenu: false,
@@ -43,6 +44,7 @@ class Navigation extends Component {
 
         return (
             <>
+                <div className="logo"></div>
                 {login ? <button onClick={this.handleProfil}>Profil</button> : null}
                 {profil ? <Profil /> : null}
 

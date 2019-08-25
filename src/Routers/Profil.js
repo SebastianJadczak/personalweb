@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const list = [
     { id: 1, name: "Moje konto", path: "/myaccount" },
     { id: 2, name: "Zadania", path: "/tasks" },
-    { id: 3, name: "Kontakt", path: "/contact" },
+    { id: 3, name: "Promocja", path: "/contact" },
 ]
 
 const Profil = (props) => {
