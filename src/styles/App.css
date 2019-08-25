@@ -6,8 +6,8 @@
 }
 
 main {
-  height: 130vh;
   padding-top: 100px;
+  background-color: rgba(0, 2, 95, 0.144);
 }
 
 nav.navigation {
@@ -18,7 +18,7 @@ nav.navigation {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
+  box-shadow: 1px 1px 1px rgb(0, 2, 95);
 }
 
 nav.navigation div.logo {
@@ -44,6 +44,7 @@ nav.navigation button {
   font-weight: bold;
   border: 1px solid rgb(223, 223, 223);
   width: 200px;
+  box-shadow: 1px 1px 1px rgb(0, 2, 95);
 }
 
 nav.navigation button.buttonMenu {
@@ -116,18 +117,76 @@ nav.navigation div.profile ul li a {
 
 }
 
-main {
-  height: 86vh;
+/* Main */
+
+
+
+/* Home */
+
+div.Article {
+  position: relative;
+  width: 80vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 110px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(0, 2, 95);
+  background-color: rgba(0, 2, 95, 0.199);
+  box-shadow: 1px 1px 1px rgb(0, 2, 95);
 }
 
+div.Article h2 {
+  padding: 10px 0px 10px 25px;
+  letter-spacing: 2.5px;
+}
 
+div.Article:nth-of-type(even) div.img {
+  position: absolute;
+  top: 2px;
+  right: 15px;
+}
 
+div.Article:nth-of-type(even) h2 {
+  padding: 10px 0px 10px 25px;
 
+}
 
+div.Article div.img {
+  position: absolute;
+  top: 2px;
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/newspaper-34126_640.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 0 0 10px;
+}
+
+div.Article h2 {
+  margin: 10px;
+}
+
+div.Article p {
+  display: block;
+  width: 70%;
+  padding-left: 20px;
+  line-height: 26px;
+}
+
+div.Article:nth-of-type(odd) p {
+  width: 70%;
+  margin-left: 29%;
+  padding-left: 0;
+}
 
 /* Footer */
 
 footer {
   height: 60px;
   background-color: rgb(0, 2, 95);
+  color: rgb(212, 212, 212);
+  text-align: center;
+  line-height: 60px;
 }

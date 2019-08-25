@@ -13,8 +13,6 @@ class Navigation extends Component {
     }
 
 
-
-
     handleLogin = () => {
         this.setState(prevState => ({
             login: !prevState.login,

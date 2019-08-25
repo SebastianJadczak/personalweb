@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import './styles/App.css';
-
 import Footer from './Routers/Footer'
 import Main from './Routers/Main'
 import Navigation from './Routers/Navigation'
-import Header from './Routers/Header'
 
 class App extends Component {
   render() {
@@ -15,9 +13,6 @@ class App extends Component {
           <nav className="navigation">
             <Navigation />
           </nav>
-          <header>
-            <Header />
-          </header>
           <main>
             <section className="main">
               <Main />
