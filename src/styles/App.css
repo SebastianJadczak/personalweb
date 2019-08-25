@@ -35,6 +35,20 @@ nav.navigation div.logo {
   border: 2px solid rgb(0, 2, 95);
 }
 
+nav.navigation a.table {
+  text-align: center;
+  line-height: 7vh;
+  background-color: rgb(0, 2, 95);
+  border: 0 solid rgb(0, 2, 95);
+  color: rgb(223, 223, 223);
+  font-size: 19px;
+  font-weight: bold;
+  border: 1px solid rgb(223, 223, 223);
+  width: 200px;
+  box-shadow: 1px 1px 1px rgb(0, 2, 95);
+  text-decoration: none;
+  margin-left: 10px;
+}
 
 nav.navigation button {
   background-color: rgb(0, 2, 95);
@@ -95,7 +109,7 @@ nav.navigation div.profile {
   position: absolute;
   font-size: 17px;
   top: 7vh;
-  right: 455px;
+  right: 666px;
   background-color: rgb(0, 2, 95);
   width: 200px;
 }

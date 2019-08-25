@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import Nav from './Nav'
 import Profil from './Profil'
 import "../styles/Navigation.css"
-
+import { NavLink } from 'react-router-dom';
 
 
 class Navigation extends Component {
     state = {
         clickMenu: false,
         login: false,
-        profil: false
+        profil: false,
+        tablePath: "/table"
     }
 
 
@@ -35,19 +36,29 @@ class Navigation extends Component {
             profil: !prevState.profil,
             clickMenu: false
         }))
-        console.log(this.state.profil)
+
     }
+    handleButton = () => {
+        this.setState({
+            clickMenu: false,
+
+            profil: false,
+        })
+    }
+
 
     render() {
 
 
-        const { clickMenu, login, profil } = this.state
+        const { clickMenu, login, profil, tablePath } = this.state
 
         return (
             <>
                 <div className="logo"></div>
                 {login ? <button onClick={this.handleProfil}>Profil</button> : null}
                 {profil ? <Profil clickProfil={this.handleProfil} /> : null}
+
+                <NavLink className="table" to={tablePath} onClick={this.handleButton}>Tablica</NavLink>
 
                 <button className="buttonMenu" onClick={this.changeClickMenu}>Menu</button>
                 {clickMenu ? <Nav clickMenu={this.changeClickMenu} /> : null}
