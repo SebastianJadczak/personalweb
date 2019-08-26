@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import Ad from "./Ad"
+import FirstAd from "./FirstAd"
+import SecondAd from "./SecondAd";
+import ThirdAd from "./ThirdAd";
+import FourthAd from "./FourthAd";
 
 const list = [
     { id: 1, title: "Pierwsze ogłoszenie", path: "/firstAd", text: "Treść ogłoszenia na które możesz odpowiedzieć, poprzez kliknięcie w przycisk poniżej. Docelowo będzie tak, że po kliknięciu w ten button, otworzy się strona dla konkretnego ogłoszenia. Ze strony będzie można, wysłać Cv, zapisać do ulubiony itp itd..." },
@@ -11,18 +15,68 @@ const list = [
 
 class Table extends Component {
 
+    state = {
+        firstAd: false,
+        secondAd: false,
+        thirdAd: false,
+        fourthAd: false,
+        firstAdPath: "/firstAd",
+
+    }
+    exit = () => {
+        this.state({
+            firstAd: false,
+            secondAd: false,
+            thirdAd: false,
+            fourthAd: false,
+        })
+    }
+
+    viewAdd = (id) => {
+        switch (id) {
+            case 1:
+                this.setState({
+                    firstAd: true
+                })
+
+                break;
+            case 2:
+                this.setState({
+                    secondAd: true
+                })
+                break;
+            case 3:
+                this.setState({
+                    thirdAd: true
+                })
+                break;
+            default:
+                this.setState({
+                    fourthAd: true
+                })
+        }
+    }
 
     render() {
 
         const ad = list.map(item => (
-            <Ad key={item.id} {...item} />
+            <Ad key={item.id} {...item} viewAdd={this.viewAdd} />
         ))
+
+
+        const { firstAd, secondAd, thirdAd, fourthAd } = this.state;
+
 
 
         return (
             <div className="Table">
                 <h2>Tablica</h2>
                 {ad}
+
+                {firstAd ? <FirstAd /> : null}
+                {secondAd ? <SecondAd /> : null}
+                {thirdAd ? <ThirdAd /> : null}
+                {fourthAd ? <FourthAd /> : null}
             </div>
         )
     }
