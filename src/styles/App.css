@@ -441,6 +441,20 @@ div.EditProfile button {
   right: 90px;
 }
 
+span.x {
+  cursor: pointer;
+  background-color: #fff;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid rgb(0, 2, 95);
+  border-radius: 50% 50%;
+  padding: 5px 10px;
+}
+
 /* Footer */
 
 footer {

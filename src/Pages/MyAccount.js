@@ -21,6 +21,27 @@ class MyAccount extends Component {
             profil: false,
         })
     }
+    handleChangeName = (e) => {
+        this.setState({
+            name: e.target.value
+        })
+    }
+    handleChangeSurname = (e) => {
+        this.setState({
+            surname: e.target.value
+        })
+    }
+    handleChangeBirthday = (e) => {
+        this.setState({
+            birthday: e.target.value
+        })
+    }
+    handleChangeDescription = (e) => {
+        this.setState({
+            description: e.target.value
+        })
+    }
+
 
     render() {
         const { name, surname, description, birthday, profil } = this.state
@@ -28,7 +49,15 @@ class MyAccount extends Component {
         return (
             <div className="account">
                 <h2>MyAccount</h2>
-                {profil ? <EditProfile exit={this.handleCloseEditProfile} /> : false}
+
+                {profil ? <EditProfile
+                    exit={this.handleCloseEditProfile}
+                    handleChangeName={this.handleChangeName}
+                    handleChangeSurname={this.handleChangeSurname}
+                    handleChangeBirthday={this.handleChangeBirthday}
+                    handleChangeDescription={this.handleChangeDescription}
+                /> : false}
+
                 <div className="acc">
                     <div className="mySelf"></div>
                     <div className="data">
