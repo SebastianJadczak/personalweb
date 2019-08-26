@@ -349,6 +349,8 @@ div.account div.acc button.mySelf {
 /* EditProfile */
 
 div.EditProfile {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 150px;
   width: 60vw;
@@ -358,6 +360,85 @@ div.EditProfile {
   box-shadow: 1px 1px 1px rgb(0, 2, 95);
   border: 1px solid rgb(0, 2, 95);
   z-index: 1;
+  color: rgb(233, 230, 230);
+}
+
+div.EditProfile h3 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+div.EditProfile div.changeName {
+  padding-bottom: 30px;
+  padding-left: 150px;
+}
+
+div.EditProfile div.changeName label {
+  font-size: 19px;
+  margin-right: 84px;
+}
+
+div.EditProfile div.changeName input {
+  height: 25px;
+  width: 300px;
+}
+
+div.EditProfile div.changeSurname {
+  padding-bottom: 30px;
+  padding-left: 150px;
+}
+
+div.EditProfile div.changeSurname label {
+  font-size: 19px;
+  margin-right: 39px;
+}
+
+div.EditProfile div.changeSurname input {
+  height: 25px;
+  width: 300px;
+}
+
+div.EditProfile div.changeBirthday {
+  padding-bottom: 30px;
+  padding-left: 150px;
+}
+
+div.EditProfile div.changeBirthday label {
+  font-size: 19px;
+  margin-right: 15px;
+}
+
+div.EditProfile div.changeBirthday input {
+  height: 25px;
+  width: 300px;
+}
+
+div.EditProfile div.changeDescription {
+  padding-bottom: 20px;
+  padding-left: 150px;
+}
+
+div.EditProfile div.changeDescription label {
+  font-size: 19px;
+  margin-right: 79px;
+}
+
+div.EditProfile div.changeDescription textarea {
+  height: 70px;
+  width: 300px;
+}
+
+div.EditProfile button {
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgb(0, 2, 95);
+  border: 1px solid rgb(0, 2, 95);
+  bottom: 50px;
+  right: 90px;
 }
 
 /* Footer */
