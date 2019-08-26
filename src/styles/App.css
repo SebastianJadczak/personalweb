@@ -481,6 +481,76 @@ div.FirstAd span {
   font-size: 25px;
 }
 
+/* SecondAD */
+div.SecondAd {
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  background-color: rgba(0, 2, 95, 0.89);
+  width: 85vw;
+  height: 80vh
+}
+
+div.SecondAd span {
+  cursor: pointer;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 22px;
+  padding: 5px 11px;
+  box-shadow: 1px 1px 1px rgb(0, 2, 95);
+  border: 1px solid rgb(0, 2, 95);
+  font-size: 25px;
+}
+
+/* ThirdAd */
+
+div.ThirdAd {
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  background-color: rgba(0, 2, 95, 0.89);
+  width: 85vw;
+  height: 80vh
+}
+
+div.ThirdAd span {
+  cursor: pointer;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 22px;
+  padding: 5px 11px;
+  box-shadow: 1px 1px 1px rgb(0, 2, 95);
+  border: 1px solid rgb(0, 2, 95);
+  font-size: 25px;
+}
+
+/* FourthAd */
+
+div.FourthAd {
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  background-color: rgba(0, 2, 95, 0.89);
+  width: 85vw;
+  height: 80vh
+}
+
+div.FourthAd span {
+  cursor: pointer;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 22px;
+  padding: 5px 11px;
+  box-shadow: 1px 1px 1px rgb(0, 2, 95);
+  border: 1px solid rgb(0, 2, 95);
+  font-size: 25px;
+}
 
 
 /* Footer */

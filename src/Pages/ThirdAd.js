@@ -1,8 +1,12 @@
 import React from "react";
 
-const ThirdAd = () => {
+const ThirdAd = (props) => {
     return (
-        <p>ThirdAd</p>
+        <div className="ThirdAd">
+
+            <span onClick={props.exit}>X</span>
+
+        </div>
     )
 }
 export default ThirdAd;

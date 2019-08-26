@@ -1,9 +1,11 @@
 import React from "react";
 
-const FourthAd = () => {
+const FourthAd = (props) => {
     return (
         <div className="FourthAd">
-            <p>FourthAd</p>
+
+            <span onClick={props.exit}>X</span>
+
         </div>
     )
 }

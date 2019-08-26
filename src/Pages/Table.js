@@ -23,8 +23,8 @@ class Table extends Component {
         firstAdPath: "/firstAd",
 
     }
-    exit = () => {
-        this.state({
+    handleExit = () => {
+        this.setState({
             firstAd: false,
             secondAd: false,
             thirdAd: false,
@@ -73,10 +73,10 @@ class Table extends Component {
                 <h2>Tablica</h2>
                 {ad}
 
-                {firstAd ? <FirstAd /> : null}
-                {secondAd ? <SecondAd /> : null}
-                {thirdAd ? <ThirdAd /> : null}
-                {fourthAd ? <FourthAd /> : null}
+                {firstAd ? <FirstAd exit={this.handleExit} /> : null}
+                {secondAd ? <SecondAd exit={this.handleExit} /> : null}
+                {thirdAd ? <ThirdAd exit={this.handleExit} /> : null}
+                {fourthAd ? <FourthAd exit={this.handleExit} /> : null}
             </div>
         )
     }
